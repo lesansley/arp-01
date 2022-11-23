@@ -1,6 +1,6 @@
 import * as React from 'react'
 import {dequal} from 'dequal'
-import {UserProvider, useUser, updateUser} from './context/user-context'
+import {UserProvider, useUser, updateUser} from '../context/user-context'
 
 function UserSettings() {
   const [{user, status, error}, userDispatch] = useUser()
