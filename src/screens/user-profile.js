@@ -1,3 +1,5 @@
+import * as React from 'react'
+import {dequal} from 'dequal'
 import {UserProvider, useUser, updateUser} from './context/user-context'
 
 function UserSettings() {
