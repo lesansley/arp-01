@@ -1,5 +1,4 @@
 import * as React from 'react'
-import {dequal} from 'dequal'
 import * as userClient from '../user-client'
 import {useAuth} from '../auth-context'
 
