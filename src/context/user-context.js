@@ -10,9 +10,9 @@ function userReducer(state, action) {
     case 'start update': {
       return {
         ...state,
-        user: {...state.user, ...action.updates},
+        user: {...state.user, ...action.updates}, //Optimistic update
         status: 'pending',
-        storedUser: state.user,
+        storedUser: state.user, //Store the current user to allow rollback incase of failed state update
       }
     }
     case 'finish update': {
